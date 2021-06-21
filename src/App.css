@@ -1,42 +1,26 @@
-.App {
-  text-align: center;
+.GameOfLife__cells {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.GameOfLife__column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.GameOfLife__cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c0c0c0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.GameOfLife__cell--alive {
+  background-color: black;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.GameOfLife__cell--dead {
+  background-color: white;
+}
+
+.GameOfLife__startGameButton {
+  margin-bottom: 6px;
 }
